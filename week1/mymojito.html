@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-
 <html>
 
 <head>
-<title>My Mojito</title>
-<link rel="stylesheet" href="css/main.css">
-</head>
+    <title>My Mojito</title>
+    <link rel="stylesheet" href="css/main.css"> </head>
 
 <body>
-<div id="mainForm"> 
-        
+    <div id="mainForm">
         <h2>Create Your Own Moijto!</h2>
-    <form action="" method="get">
-
-     <label for="rum">Select Your Rum: </label>
+        <form action="" method="get">
+            <label for="rum">Select Your Rum: </label>
             <select name="rum" id="rum">
                 <option value="flor-de-cana">Flor de Cana</option>
                 <option value="cruzan">Cruzan</option>
@@ -23,17 +19,15 @@
                 <option value="10cane">10 Cane</option>
                 <option value="appleton">Appleton</option>
             </select>
-            
             <label for="ounce">How Many Ounces of Rum?
-            <label>
-                <input type="checkbox" name="ounce1" value="2" />2 oz</label>
-            <label>
-                <input type="checkbox" name="ounce2" value="3" />3 oz</label>
+                <label>
+                    <input type="checkbox" name="ounce1" value="2" />2 oz</label>
+                <label>
+                    <input type="checkbox" name="ounce2" value="3" />3 oz</label>
             </label>
-                <br>
-                <br>
-                <br>
-            
+            <br>
+            <br>
+            <br>
             <label for="fruit">Select Your Fruit:</label>
             <select name="fruit" id="fruit">
                 <option value="coconut">Coconut</option>
@@ -42,25 +36,30 @@
                 <option value="blueberry">Blueberry</option>
                 <option value="mango">Mango</option>
             </select>
-            
             <label for="limes">Do You Want to Add Limes?
-            <label>
-                <input type="checkbox" name="rating" value="yes" />Yes</label>
-            <label>
-                <input type="checkbox" name="rating" value="no" />No`</label>
+                <label>
+                    <input type="checkbox" name="rating" value="yes" />Yes</label>
+                <label>
+                    <input type="checkbox" name="rating" value="no" />No`</label>
             </label>
-                <br>
-                <br>
-                <br>
+            <br>
+            <br>
+            <br>
             <label for="mojitoName">Name Your Mojito:</label>
-            <input type="text" name="mojitoName" id="mojitoName">
-
+            <input type="text" name="mojitoName" size="30" maxlength="100">
             <br>
             <br>
-
-
-   </div>
-</form>
+            <br>
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label for="email">Email:</label>
+                <input type="email" name="email" size="30" maxlength="100">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" size="25" maxlength="20"> </fieldset>
+            <br>
+            <br>
+            <input type="submit" value="Submit"/> </form>
+    </div>
 </body>
 
 </html>
