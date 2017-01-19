@@ -1,0 +1,29 @@
+body{
+    background-color: lightgreen;
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+#mainForm{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+#rum{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#ounce{
+    margin-top: 5px;
+    width: 100%;
+}
+
+#fruit{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+}
