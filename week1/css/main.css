@@ -1,5 +1,5 @@
 body{
-    /* background-color: lightgreen;*/
+    background-color: lightgreen;
     font-family: sans-serif;
     font-size: 10pt;
 }
@@ -26,4 +26,17 @@ body{
     margin-top: 5px;
     margin-bottom: 30px;
     width: 100%;
+}
+
+.mojitoName {
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+}
+
+.fieldset {
+    width: 475px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
