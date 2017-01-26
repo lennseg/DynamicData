@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Mojito 2.0</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-  <body>
-  <header class="bgimage"></header>
+    <link href="css/main.css" rel="stylesheet"> </head>
 
-   <div class="container">
-    <h1>Create Your Own Moijto!</h1>
-    <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p></div>
-
+<body>
+    <header class="bgimage"></header>
+    <div class="container">
+        <header class="row">
+            <div class="col-xs-12 col-md-6">
+                <h1>Create Your Own Moijto!</h1>
+                <form action="" method="get">
+                    <label for="rum">Select Your Rum: </label>
+                    <select name="rum" id="rum">
+                        <option value="flor-de-cana">Flor de Cana</option>
+                        <option value="cruzan">Cruzan</option>
+                        <option value="bacardi">Bacardi</option>
+                        <option value="10cane">10 Cane</option>
+                        <option value="appleton">Appleton</option>
+                    </select>
+                    <label for="ounce">How Many Ounces of Rum?
+                        <label>
+                            <input type="checkbox" name="ounce1" value="2" />2 oz</label>
+                        <label>
+                            <input type="checkbox" name="ounce2" value="3" />3 oz</label>
+                    </label>
+                    <label for="fruit">Select Your Fruit:</label>
+                    <select name="fruit" id="fruit">
+                        <option value="coconut">Coconut</option>
+                        <option value="passion-fruit">Passion Fruit</option>
+                        <option value="watermelon">Watermelon</option>
+                        <option value="blueberry">Blueberry</option>
+                        <option value="mango">Mango</option>
+                    </select>
+                    <label for="limes">Do You Want to Add Limes?
+                        <label>
+                            <input type="checkbox" name="rating" value="yes" />Yes</label>
+                        <label>
+                            <input type="checkbox" name="rating" value="no" />No`</label>
+                    </label>
+                    <label for="mojitoName">Name Your Mojito:</label>
+                    <input type="text" name="mojitoName" size="30" maxlength="100" class="mojitoName">
+                    <fieldset>
+                        <legend>Your Details:</legend>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" size="30" maxlength="100">
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass" size="25" maxlength="20"> </fieldset>
+                    <input type="submit" value="Submit" /> </form>
+            </div>
+        </header>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

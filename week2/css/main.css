@@ -4,3 +4,32 @@
     background-size: cover;
     height: 200px;
 }
+
+#rum{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#ounce{
+    margin-top: 5px;
+    width: 100%;
+}
+
+#fruit{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.mojitoName {
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+}
+
+.fieldset {
+    width: 475px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
