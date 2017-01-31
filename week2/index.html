@@ -13,60 +13,59 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                <form action="" method="get">
-                    <h1>Create Your Own Moijto!</h1>
+               <img src="images/mojito.jpg" height="250px">
+                <h1>Create Your Own Moijto!</h1>
+                <form class="form-group">
+                    <label for="rum">Select Your Rum: </label>
+                    <select name="rum" class="form-control" id="rum">
+                        <option value="flor-de-cana">Flor de Cana</option>
+                        <option value="cruzan">Cruzan</option>
+                        <option value="bacardi">Bacardi</option>
+                        <option value="10cane">10 Cane</option>
+                        <option value="appleton">Appleton</option>
+                    </select>
+                </form>
+                <form class="form-inline">
                     <div class="form-group">
-                        <label for="rum">Select Your Rum: </label>
-                        <select name="rum" class="form-control" id="rum">
-                            <option value="flor-de-cana">Flor de Cana</option>
-                            <option value="cruzan">Cruzan</option>
-                            <option value="bacardi">Bacardi</option>
-                            <option value="10cane">10 Cane</option>
-                            <option value="appleton">Appleton</option>
-                        </select>
+                        <label for="ounce">How Many Ounces of Rum?</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="options" id="option1" value="2"> 2 oz </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="options" id="option2" value="3"> 3 oz </label>
                     </div>
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <label for="ounce">How Many Ounces of Rum?</label>
-                            <label class="radio-inline">
-                                <input type="radio" name="options" id="option1" value="2"> 2 oz </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="options" id="option2" value="3"> 3 oz </label>
-                        </div>
-                    </form>
+                </form>
+                <div class="form-group">
+                    <label for="fruit">Select Your Fruit:</label>
+                    <select name="fruit" class="form-control" id="fruit">
+                        <option value="coconut">Coconut</option>
+                        <option value="passion-fruit">Passion Fruit</option>
+                        <option value="watermelon">Watermelon</option>
+                        <option value="blueberry">Blueberry</option>
+                        <option value="mango">Mango</option>
+                    </select>
+                </div>
+                <form class="form-inline">
                     <div class="form-group">
-                        <label for="fruit">Select Your Fruit:</label>
-                        <select name="fruit" class="form-control" id="fruit">
-                            <option value="coconut">Coconut</option>
-                            <option value="passion-fruit">Passion Fruit</option>
-                            <option value="watermelon">Watermelon</option>
-                            <option value="blueberry">Blueberry</option>
-                            <option value="mango">Mango</option>
-                        </select>
+                        <label for="limes">Do You Want to Add Limes?</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="options" id="option1" value="yes"> Yes </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="options" id="option2" value="no"> No </label>
                     </div>
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <label for="limes">Do You Want to Add Limes?</label>
-                            <label class="radio-inline">
-                                <input type="radio" name="options" id="option1" value="yes"> Yes </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="options" id="option2" value="no"> No </label>
-                        </div>
-                    </form>
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <label for="mojitoName">Name Your Mojito</label>
-                            <input type="text" class="form-control" id="mojitoName" placeholder="Mojito Name"> </div>
-                    </form>
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <label for="inputEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email"> </div>
-                        <div class="form-group">
-                            <label for="inputPassword">Password</label>
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password"> </div>
-                        <button type="submit" class="btn btn-default">Sumbit</button>
-                    </form>
+                </form>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="mojitoName">Name Your Mojito</label>
+                        <input type="text" class="form-control" id="mojitoName" placeholder="Mojito Name"> </div>
+                </form>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email"> </div>
+                    <div class="form-group">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password"> </div>
+                    <button type="submit" class="btn btn-default">Sumbit</button>
                 </form>
             </div>
         </div>
