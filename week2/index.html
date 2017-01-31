@@ -5,67 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-    <title>My Mojito 2.0</title>
+    <title>My Mojito</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet"> </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-6"> <img src="images/mojito.jpg" height="250px">
-                <h1>Create Your Own Moijto!</h1>
-                <form class="form-group">
-                    <label for="rum">Select Your Rum: </label>
-                    <select name="rum" class="form-control" id="rum">
-                        <option value="flor-de-cana">Flor de Cana</option>
-                        <option value="cruzan">Cruzan</option>
-                        <option value="bacardi">Bacardi</option>
-                        <option value="10cane">10 Cane</option>
-                        <option value="appleton">Appleton</option>
-                    </select>
-                </form>
-                <form class="form-inline">
+            <div class="col-xs-12 col-md-6"> <img src="images/mojito.jpg" class="img-responsive" alt="It's five o'clock somewhere!">
+                <fieldset>
+                    <legend><span class="glyphicon glyphicon-glass" aria-hidden="true"></span> Create Your Moijto</legend>
+                    <form class="form-group">
+                        <label for="rum">Select Your Rum: </label>
+                        <select name="rum" class="form-control" id="rum">
+                            <option value="flor-de-cana">Flor de Cana</option>
+                            <option value="cruzan">Cruzan</option>
+                            <option value="bacardi">Bacardi</option>
+                            <option value="10cane">10 Cane</option>
+                            <option value="appleton">Appleton</option>
+                        </select>
+                    </form>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="ounce">How Many Ounces of Rum? </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="options" id="option1" value="2"> 2 oz </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="options" id="option2" value="3"> 3 oz </label>
+                        </div>
+                    </form>
                     <div class="form-group">
-                        <label for="ounce">How Many Ounces of Rum?</label>
-                        <label class="radio-inline">
-                            <input type="radio" name="options" id="option1" value="2"> 2 oz </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="options" id="option2" value="3"> 3 oz </label>
+                        <label for="fruit">Select Your Fruit: </label>
+                        <select name="fruit" class="form-control" id="fruit">
+                            <option value="coconut">Coconut</option>
+                            <option value="passion-fruit">Passion Fruit</option>
+                            <option value="watermelon">Watermelon</option>
+                            <option value="blueberry">Blueberry</option>
+                            <option value="mango">Mango</option>
+                        </select>
                     </div>
-                </form>
-                <div class="form-group">
-                    <label for="fruit">Select Your Fruit:</label>
-                    <select name="fruit" class="form-control" id="fruit">
-                        <option value="coconut">Coconut</option>
-                        <option value="passion-fruit">Passion Fruit</option>
-                        <option value="watermelon">Watermelon</option>
-                        <option value="blueberry">Blueberry</option>
-                        <option value="mango">Mango</option>
-                    </select>
-                </div>
-                <form class="form-inline">
                     <div class="form-group">
-                        <label for="limes">Do You Want to Add Limes?</label>
+                        <label for="limes">Do You Want to Add Limes? </label>
                         <label class="radio-inline">
                             <input type="radio" name="options" id="option1" value="yes"> Yes </label>
                         <label class="radio-inline">
                             <input type="radio" name="options" id="option2" value="no"> No </label>
                     </div>
-                </form>
-                <form class="form-inline">
                     <div class="form-group">
-                        <label for="mojitoName">Name Your Mojito</label>
+                        <label for="mojitoName">Name Your Mojito </label>
                         <input type="text" class="form-control" id="mojitoName" placeholder="Mojito Name"> </div>
-                </form>
-                <form class="form-inline">
+                </fieldset>
+                <fieldset>
+                    <legend><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Your Information</legend>
                     <div class="form-group">
                         <label for="inputEmail">Email</label>
                         <input type="email" class="form-control" id="inputEmail" placeholder="Email"> </div>
                     <div class="form-group">
                         <label for="inputPassword">Password</label>
                         <input type="password" class="form-control" id="inputPassword" placeholder="Password"> </div>
-                    <button type="submit" class="btn btn-default">Sumbit</button>
-                </form>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Sumbit</button>
+                    </div>
+                </fieldset>
             </div>
         </div>
     </div>
