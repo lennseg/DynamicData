@@ -41,18 +41,18 @@ var sequelize = new Sequelize('db', 'username', 'password', {
 });
 
 
-var Monster = sequelize.define('monster', {
+var Mojito = sequelize.define('mojito', {
 
-    monsterName: {
+    mojitoName: {
         type: Sequelize.STRING
     },
-    quarters: {
+    rum: {
         type: Sequelize.STRING
     },
-    weapon: {
+    fruit: {
         type: Sequelize.STRING
     },
-    message: {
+    limes: {
         type: Sequelize.STRING
     }
 
@@ -188,7 +188,7 @@ server.route({
     path: '/destroyAll',
     handler: function (request, reply) {
 
-        Monster.drop();
+        Mojito.drop();
 
         reply("destroy all");
     }
@@ -196,16 +196,16 @@ server.route({
 
 server.route({
     method: 'GET',
-    path: '/addDB/{monsterName}/{quarters}/{weapon}/{message}',
+    path: '/addDB/{mojitoName}/{rum}/{fruit}/{limes}',
     handler: function(request, reply){
         Monster.create({
-            monsterName: encodeURIComponent(request.params.monsterName),
-            quarters: encodeURIComponent(request.params.quarters),
-            weapon: encodeURIComponent(request.params.weapon),
-            message: encodeURIComponent(request.params.message),
+            mojitoName: encodeURIComponent(request.params.mojitoName),
+            rum: encodeURIComponent(request.params.rum),
+            fruit: encodeURIComponent(request.params.fruit),
+            limes: encodeURIComponent(request.params.limes),
         });
 
-        Monster.sync();
+        Mojito.sync();
 
         reply("saved entry");
     }
@@ -218,7 +218,7 @@ server.route({
 
         Monster.findAll().then(function(users){
 
-            //console.log(users[0].monsterName);
+            //console.log(users[0].mojitoName);
 
             var allUsers = JSON.stringify(users);
 
