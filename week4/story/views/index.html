@@ -1,13 +1,16 @@
-<h1>{{Title}}</h1>
+<h1>{{title}}</h1>
 <p>{{#bold}} {{message}} {{/bold}}</p>
 
+<img src="{{pic}}">
 
-
+{{#if menu}}
 <ul>
-    <li>menu.[0].item</li>
-    <li>menu.[1].item</li>
-    <li>menu.[2].item</li>
+    <li>{{menu.[0].item}}</li>
+    <li>{{menu.[1].item}}</li>
+    <li>{{menu.[2].item}}</li>
+
 </ul>
+{{/if}}
 
 
 <nav>
