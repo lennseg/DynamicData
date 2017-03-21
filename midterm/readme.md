@@ -10,7 +10,7 @@ One of my main interests are analyzing text and producing the results with a vis
 Concordance is an alphabetical list of the words (especially the important ones) present in a text, usually with citations of the passages concerned.
 
 #Process
-I began my process by first creating a word count in javascript for an MLK speech.
+I began my process by first creating a word count in javascript for the MLK speech.
 
 #Troubleshooting
 
