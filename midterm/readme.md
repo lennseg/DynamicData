@@ -5,7 +5,6 @@ The goal for this assignment was to visualize the frequency of words in a speech
 
 #Inspiration:
 * http://twitter.github.io/interactive/sotu2014/#p1
-* https://runemadsen.com/work/speech-comparison/
 
 Concordance is an alphabetical list of the words (especially the important ones) present in a text, usually with citations of the passages concerned.
 
@@ -13,6 +12,3 @@ Concordance is an alphabetical list of the words (especially the important ones)
 I began my process by first creating a word count in javascript for the MLK speech.
 
 #Troubleshooting
-
-
-
