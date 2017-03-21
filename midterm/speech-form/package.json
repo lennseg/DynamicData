@@ -7,7 +7,6 @@
   },
   "author": "lennse garcia",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "blipp": "^2.3.0",
     "chart.js": "^2.5.0",
@@ -20,5 +19,7 @@
     "sequelize": "^3.30.2",
     "sqlite3": "^3.1.8",
     "vision": "^4.1.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
