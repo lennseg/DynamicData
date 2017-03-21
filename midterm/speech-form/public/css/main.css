@@ -1,0 +1,33 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.file {
+    font-weight: bold;
+}
+
+.text {
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+}
+
+#drop_zone {
+    padding: 15px;
+    background-color: lightblue;
+    border-style: dotted;
+    width: 110px;
+    text-align: center;
+    font-size: 12px;
+}
