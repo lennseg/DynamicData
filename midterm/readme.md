@@ -1,7 +1,7 @@
 #Midterm: Word Frequency in Speeches
 Spring 2017
 
-One of my main interests are analyzing text and producing the results with a visualization. The goal for this assignment was to visualize the results of a concordance using a chart to show the frequency of words in a speech.
+The goal for this assignment was to visualize the frequency of words in a speech. The user will then compare speeches based on the context.
 
 #Inspiration:
 * http://twitter.github.io/interactive/sotu2014/#p1
