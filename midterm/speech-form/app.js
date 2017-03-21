@@ -10,6 +10,7 @@ const fs = require("fs");
 const Sequelize = require('sequelize');
 const Fetch = require("node-fetch");
 const FormData = require("form-data");
+const Chart = require('chart.js');
 
 const server = new Hapi.Server({
     connections: {
