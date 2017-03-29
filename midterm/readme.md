@@ -1,7 +1,7 @@
 #Midterm: Word Frequency in Speeches
 Spring 2017
 
-The goal for this assignment was to visualize the frequency of words in a speech. The user will then compare speeches based on the context.
+The goal for this assignment was to visualize the frequency of words for several Presidential speeches.
 
 #Inspiration:
 * http://twitter.github.io/interactive/sotu2014/#p1

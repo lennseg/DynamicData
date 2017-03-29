@@ -43,21 +43,20 @@ server.route({
         view: {
             template: 'index',
             context:{
-                title: 'My Story',
-                message: 'Rey the Cat',
-                pic:'',
+                title: 'Rey robs a bank',
+                message: 'Choose options for Reys adventure',
                 nav: [
                     {
                         url: "/page2/bank",
-                        title: "bank"
+                        title: "Pick a bank"
                     },
                     {
-                        url: "/page2/weapon",
-                        title: "weapon"
+                        url: "/page2/kite",
+                        title: "kite"
                     },
                     {
-                        url: "/page2/money",
-                        title: "money"
+                        url: "/page2/computer",
+                        title: "computer"
                     },
 
                 ],
@@ -89,4 +88,4 @@ server.start((err) => {
         throw err;
     }
     console.log(`Server running at: ${server.info.uri}`);
-});'
+});
