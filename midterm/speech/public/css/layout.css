@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+
+#mainForm{
+    background-color: white;
+    width: 370px;
+    margin: 0 auto;
+    padding: 20px;
+}

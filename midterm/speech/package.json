@@ -15,12 +15,14 @@
   "dependencies": {
     "blipp": "^2.3.0",
     "chart.js": "^2.5.0",
+    "count2word": "^1.0.2",
     "form-data": "^2.1.2",
     "handlebars": "^4.0.6",
     "hapi": "^16.1.0",
     "inert": "^4.1.0",
     "node-fetch": "^1.6.3",
-    "sequelize": "^3.30.2",
+    "sequelize": "^3.30.4",
+    "sqlite": "^2.5.0",
     "sqlite3": "^3.1.8",
     "vision": "^4.1.1"
   }
