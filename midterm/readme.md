@@ -16,4 +16,6 @@ I began my process by first cleaning the text files for all the speeches. I clea
 
 ![cleaning-up-text](https://cloud.githubusercontent.com/assets/21225598/24536901/e35a815a-15ab-11e7-8d99-9df6af45f911.jpg)
 
-Creating a word count in javascript for the MLK speech.
+I then created the word count in javascript testing with the MLK speech.
+
+![speech-js-test-code-01](https://cloud.githubusercontent.com/assets/21225598/24537211/a73f84ce-15ae-11e7-9452-2caae258b7f9.jpg)
