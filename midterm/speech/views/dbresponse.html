@@ -1,5 +1,57 @@
-{{#if dbresponse}}
-    {{#all dbresponse}}
-      {{id}} : {{mlkSpeech}}<br>
-    {{/all}}
-{{/if}}
+
+   
+
+   
+   <div id="mainRes"> 
+   
+   
+   
+
+   {{#if dbresponse}} {{#all dbresponse}} 
+   
+   {{id}} :  {{authorName}} : {{date}} : <p id="insert{{id}}"> </p>
+    <script>
+        var speech = "{{speechContent}}"
+        speech = speech.replace(/[^\w\s]|_/g, "");
+        var lower = speech.toLowerCase(); //lowercase all words
+        //string of words to ignore
+        var ignore2 = "and, you, i, am, its, it, the, to, of, a, on, can, with, for, this, that, in, be, as, has, if, from, but, so, also, there, their, are, than, do, here, must, make, about, by, have, not, who, know, how, those, these, when, they, why, your, must, because, day, one, was, just, will";
+
+        function checkIgnore(word) {
+            if (ignore2.includes(word)) {
+                return true;
+            }
+        }
+        var splitting = lower.split(" ");
+        var countingWords = {};
+        var word = splitting[0];
+        for (var i = 0; i < splitting.length; i++) {
+            if (!checkIgnore(splitting[i])) {
+                var inArray = 0;
+                for (var words in countingWords) {
+                    if (words == splitting[i]) {
+                        inArray = 1;
+                    }
+                }
+                if (inArray == 0) {
+                    countingWords[splitting[i]] = 0;
+                    countingWords[splitting[i]]++;
+                }
+                if (inArray == 1) {
+                    countingWords[splitting[i]]++;
+                }
+            }
+        }
+        var myWords = Object.keys(countingWords);
+        var result  = "";
+        for (var i = 0; i < myWords.length; i++) {
+            if (countingWords[myWords[i]] > 10) {
+                result=result+(myWords[i] + " : " + countingWords[myWords[i]])+"<br/>";
+            }
+        }
+        document.getElementById("insert{{id}}").innerHTML= result; 
+    </script> 
+    
+    <br> {{/all}} {{/if}} </div>
+    
+   

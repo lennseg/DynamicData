@@ -6,13 +6,13 @@ const Vision = require('vision');
 const Inert = require('inert');
 const Path = require('path');
 const Handlebars = require('handlebars');
-
 const fs = require("fs");
-
 const Sequelize = require('sequelize');
+const Fetch = require("node-fetch");
+const FormData = require("form-data");
 
 const server = new Hapi.Server({
-     connections: {
+    connections: {
         routes: {
             files: {
                 relativeTo: Path.join(__dirname, 'public')
@@ -22,8 +22,9 @@ const server = new Hapi.Server({
 });
 
 server.connection({
-    port: 3000
+    port: 3002
 });
+
 
 var sequelize = new Sequelize('db', 'username', 'password', {
     host: 'localhost',
@@ -39,13 +40,18 @@ var sequelize = new Sequelize('db', 'username', 'password', {
     storage: 'db.sqlite'
 });
 
-var Speeches = sequelize.define('speech', {
 
-    mlkSpeech: {
+var Speech = sequelize.define('speech', {
+    speechContent: {
+        type: Sequelize.STRING(100000)
+    },
+    authorName: {
+        type: Sequelize.STRING
+    },
+    date: {
         type: Sequelize.STRING
     },
 });
-
 
 server.register([Blipp, Inert, Vision], () => {});
 
@@ -66,11 +72,7 @@ server.route({
     path: '/',
     handler: {
         view: {
-            template: 'index',
-            context: {
-                title: 'Speeches',
-                message: 'Keywords in Presidential Speeches'
-            }
+            template: 'index'
         }
     }
 });
@@ -87,78 +89,6 @@ server.route({
     }
 });
 
-server.route({
-    method: 'POST',
-    path: '/form',
-    handler: function (request, reply) {
-        var formresponse = JSON.stringify(request.payload);;
-
-        reply.view('formresponse', {
-            formresponse: formresponse
-        })
-    }
-
-});
-
-server.route({
-    method: 'GET',
-    path: '/savefile',
-    handler: {
-        view: {
-            template: 'savefile'
-        }
-    }
-
-});
-
-server.route({
-    method: 'POST',
-    path: '/savefile',
-    handler: function (request, reply) {
-        var formResponse = request.payload;
-
-        var jsonForm = JSON.stringify(formResponse);
-
-        fs.writeFile('savedata.txt', jsonForm, function (err) {
-            if (err) {
-                return console.error(err);
-            }
-
-            fs.readFile('savedata.txt', function (err, data) {
-                if (err) {
-                    return console.error(err);
-                }
-
-                console.log(data.toString());
-
-            });
-        });
-        reply("File Saved");
-    }
-});
-
-server.route({
-method: 'GET',
-    path: '/savedata',
-    handler: function (request, reply) {
-
-        var currentData = "";
-        fs.readFile('savedata.txt', function (err, data) {
-            if (err) {
-                return console.error(err);
-            }
-            currentData = JSON.parse(data.toString());
-
-
-            reply.view('savedata', {
-                formresponse: currentData,
-            });
-        });
-
-    }
-});
-
-
 
 server.route({
     method: 'GET',
@@ -172,6 +102,58 @@ server.route({
     }
 });
 
+
+server.route({
+    method: 'GET',
+    path: '/create-speech',
+    handler: {
+        view: {
+            template: 'create-speech'
+        }
+    }
+});
+
+
+server.route({
+
+    method: 'POST',
+    path: '/formSpeech',
+    handler: function (request, reply) {
+        var formresponse = JSON.stringify(request.payload);
+        var parsing = JSON.parse(formresponse);
+        //console.log(parsing);
+
+        Speech.create(parsing).then(function (currentSpeech) {
+           Speech.sync();
+            console.log("...syncing");
+            console.log(currentSpeech);
+            return (currentSpeech);
+        }).then(function (currentSpeech) {
+
+            reply.view('create-speech', {
+               
+            });
+        });
+    }
+});
+
+
+server.route({
+    method: 'GET',
+    path: '/displayAll',
+    handler: function (request, reply) {
+        Speech.findAll().then(function (users) {
+            // projects will be an array of all User instances
+            //console.log(users[0].monsterName);
+            var allUsers = JSON.stringify(users);
+            reply.view('dbresponse', {
+                dbresponse: allUsers
+            });
+        });
+    }
+});
+
+
 server.route({
     method: 'GET',
     path: '/destroyAll',
@@ -183,35 +165,6 @@ server.route({
     }
 });
 
-server.route({
-    method: 'GET',
-    path: '/addDB/{mlkSpeech}',
-    handler: function(request, reply){
-        Speech.create({
-            mlkSpeech: encodeURIComponent(request.params.mlkSpeech),
-        });
-
-        Speech.sync();
-
-        reply("saved entry");
-    }
-});
-
-server.route({
-    method: 'GET',
-    path: '/displayAll',
-    handler: function (request, reply) {
-
-        Speech.findAll().then(function(users){
-
-            var allUsers = JSON.stringify(users);
-
-            reply.view('dbresponse', {
-                dbresponse: allUsers
-            });
-        })
-    }
-});
 
 
 server.start((err) => {
