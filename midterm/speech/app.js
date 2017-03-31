@@ -28,7 +28,7 @@ server.connection({
 
 var sequelize = new Sequelize('db', 'username', 'password', {
     host: 'localhost',
-    dialect: 'sqlite'|'postgres',
+    dialect: 'sqlite',
 
     pool: {
         max: 5,
@@ -138,6 +138,7 @@ server.route({
     }
 });
 
+server.route({
 method: 'GET',
     path: '/savedata',
     handler: function (request, reply) {
