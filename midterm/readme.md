@@ -13,7 +13,8 @@ Speeches I focused on:
 * http://twitter.github.io/interactive/sotu2014/#p1
 
 #Process
-I began my process by first cleaning the text files for all the speeches.
+
+I began my process by first cleaning the text files for all the speeches. I cleaned up extra spaces and took out the quotations for the javascript code.
 
 ![cleaning-up-text](https://cloud.githubusercontent.com/assets/21225598/24536901/e35a815a-15ab-11e7-8d99-9df6af45f911.jpg)
 
