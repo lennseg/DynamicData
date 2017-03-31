@@ -15,4 +15,6 @@ Speeches I focused on:
 #Process
 I began my process by first cleaning the text files for all the speeches.
 
+![cleaning-up-text](https://cloud.githubusercontent.com/assets/21225598/24536901/e35a815a-15ab-11e7-8d99-9df6af45f911.jpg)
+
 Creating a word count in javascript for the MLK speech.
