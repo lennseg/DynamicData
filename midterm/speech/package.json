@@ -1,29 +1,29 @@
 {
-  "name": "speech",
-  "version": "1.0.0",
-  "description": "word frequency",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "word",
-    "count"
-  ],
-  "author": "lennse garcia",
-  "license": "ISC",
-  "dependencies": {
-    "blipp": "^2.3.0",
-    "chart.js": "^2.5.0",
-    "form-data": "^2.1.2",
-    "handlebars": "^4.0.6",
-    "hapi": "^16.1.0",
-    "inert": "^4.1.0",
-    "node-fetch": "^1.6.3",
-    "sequelize": "^3.30.4",
-    "sqlite": "^2.5.0",
-    "sqlite3": "^3.1.8",
-    "vision": "^4.1.1"
-  },
-  "devDependencies": {}
+    "name": "speech"
+    , "version": "1.0.0"
+    , "description": "word frequency"
+    , "main": "index.js"
+    , "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+    , "keywords": [
+    "word"
+    , "count"
+  ]
+    , "author": "lennse garcia"
+    , "license": "ISC"
+    , "dependencies": {
+        "blipp": "^2.3.0"
+        , "chart.js": "^2.5.0"
+        , "form-data": "^2.1.2"
+        , "handlebars": "^4.0.6"
+        , "hapi": "^16.1.0"
+        , "inert": "^4.1.0"
+        , "node-fetch": "^1.6.3"
+        , "sequelize": "^3.30.4"
+        , "sqlite": "^2.5.0"
+        , "sqlite3": "^3.1.8"
+        , "vision": "^4.1.1"
+    }
+    , "devDependencies": {}
 }

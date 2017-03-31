@@ -1,15 +1,5 @@
-
-   
-
-   
-   <div id="mainRes"> 
-   
-   
-   
-
-   {{#if dbresponse}} {{#all dbresponse}} 
-   
-   {{id}} :  {{authorName}} : {{date}} : <p id="insert{{id}}"> </p>
+<div id="mainRes"> {{#if dbresponse}} {{#all dbresponse}} {{id}} : {{authorName}} : {{date}} :
+    <p id="insert{{id}}"> </p>
     <script>
         var speech = "{{speechContent}}"
         speech = speech.replace(/[^\w\s]|_/g, "");
@@ -43,15 +33,12 @@
             }
         }
         var myWords = Object.keys(countingWords);
-        var result  = "";
+        var result = "";
         for (var i = 0; i < myWords.length; i++) {
             if (countingWords[myWords[i]] > 10) {
-                result=result+(myWords[i] + " : " + countingWords[myWords[i]])+"<br/>";
+                result = result + (myWords[i] + " : " + countingWords[myWords[i]]) + "<br/>";
             }
         }
-        document.getElementById("insert{{id}}").innerHTML= result; 
-    </script> 
-    
+        document.getElementById("insert{{id}}").innerHTML = result;
+    </script>
     <br> {{/all}} {{/if}} </div>
-    
-   
