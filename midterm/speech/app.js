@@ -6,7 +6,6 @@ const Vision = require('vision');
 const Inert = require('inert');
 const Path = require('path');
 const Handlebars = require('handlebars');
-const count2Word = require('count2word');
 
 const fs = require("fs");
 
@@ -70,7 +69,7 @@ server.route({
             template: 'index',
             context: {
                 title: 'Speeches',
-                message: 'See the keywords in Presidential Speeches'
+                message: 'Keywords in Presidential Speeches'
             }
         }
     }
