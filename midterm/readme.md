@@ -54,3 +54,9 @@ I inputted the javascript into the dbresponse page. I also replaced the MLK spee
 #Displaying the Data
 
 ![displaying-data-01](https://cloud.githubusercontent.com/assets/21225598/24573492/9a5a4674-1651-11e7-9bab-c0745c7501bc.jpg)
+
+##Running the Server
+
+<img width="619" alt="screen shot 2017-03-31 at 8 39 04 pm" src="https://cloud.githubusercontent.com/assets/21225598/24573562/9fa26d90-1652-11e7-8878-7e0552ed4a27.png">
+
+
