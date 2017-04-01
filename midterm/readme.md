@@ -36,5 +36,6 @@ I ended the script by counting words that were frequent 10 or more times (this i
 I followed the examples we worked on in class to created my server and database.
 
 ![creating-server-01](https://cloud.githubusercontent.com/assets/21225598/24573305/a7344ea0-164f-11e7-9872-7394fb01990a.jpg)
+![creating-server-02](https://cloud.githubusercontent.com/assets/21225598/24573320/d11b0f9c-164f-11e7-8aa5-02d640c001f4.jpg)
 
 ##Creating the Database
