@@ -5,7 +5,7 @@ The goal for this assignment was to view the frequency of words in speeches. I d
 Speeches I focused on:
 * Martin Luther King's "I Have a Dream" speech
 * Barack Obama's first State of the Union speech
-* Preseident Donald Trump's first State of the Union speech
+* President Donald Trump's first State of the Union speech
 
 #Inspiration:
 * http://twitter.github.io/interactive/sotu2014/#p1
