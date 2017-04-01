@@ -46,8 +46,11 @@ I followed the examples we worked on in class to created my server and database.
 
 #Inputing the Data
 
-I inputted the javascript into the dbresponse.html page. I replaced the MLK speech with the variables from the columns (speech, author and date).
+I inputted the javascript into the dbresponse page. I also replaced the MLK speech with the variables from the columns (speech, author and date).
 
 ![inputing-data-01](https://cloud.githubusercontent.com/assets/21225598/24573395/9cdb961a-1650-11e7-8fbf-93fa1a985a16.jpg)
 ![inputing-data-02](https://cloud.githubusercontent.com/assets/21225598/24573424/e75d2078-1650-11e7-98eb-3f7f59607ec5.jpg)
 
+#Displaying the Data
+
+![displaying-data-01](https://cloud.githubusercontent.com/assets/21225598/24573492/9a5a4674-1651-11e7-9bab-c0745c7501bc.jpg)
