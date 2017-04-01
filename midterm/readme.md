@@ -67,4 +67,10 @@ The user can replace the sample content with theirs. If they wanted to see how t
 
 ##Output
 
+After clicking 'Submit' and then 'Show Frequent Words' the user will see all the word frequiences along with the author and date. The data has an ID showing how many times it's been inputted into the database. If the user goes to the 'DestoyAll' page, all the data will be deleted. 
+
+<img width="202" alt="screen shot 2017-03-31 at 8 40 34 pm" src="https://cloud.githubusercontent.com/assets/21225598/24573597/5cfb373c-1653-11e7-9c65-49dcb969c1f6.png">
+
+
+<img width="202" alt="screen shot 2017-03-31 at 8 40 34 pm" src="https://cloud.githubusercontent.com/assets/21225598/24573597/5cfb373c-1653-11e7-9c65-49dcb969c1f6.png">
 
