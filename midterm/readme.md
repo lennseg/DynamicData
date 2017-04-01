@@ -63,11 +63,8 @@ I inputted the javascript into the dbresponse page. I also replaced the MLK spee
 
 The user can replace the sample content with theirs. If they wanted to see how the database works they can sample with the MLK, Trump or Obama speech and view the word frequencies.
 
-##Output
-
-
-
 <img width="505" alt="screen shot 2017-03-31 at 8 40 04 pm" src="https://cloud.githubusercontent.com/assets/21225598/24573571/d3df074e-1652-11e7-9cf0-d37623ed5abf.png">
 
+##Output
 
 
