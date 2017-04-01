@@ -61,16 +61,12 @@ I inputted the javascript into the dbresponse page. I also replaced the MLK spee
 
 ##User's Input
 
-The user can replace the sample content with theirs. If they wanted to see how the database works they can sample with the MLK, Trump or Obama speech and view the word frequencies.
+The user can replace the sample content with theirs. If they wanted to see how the database works they can sample the MLK, Trump or Obama speech and view the word frequencies.
 
 <img width="505" alt="screen shot 2017-03-31 at 8 40 04 pm" src="https://cloud.githubusercontent.com/assets/21225598/24573571/d3df074e-1652-11e7-9cf0-d37623ed5abf.png">
 
 ##Output
 
-After clicking 'Submit' and then 'Show Frequent Words' the user will see all the word frequiences along with the author and date. The data has an ID showing how many times it's been inputted into the database. If the user goes to the 'DestoyAll' page, all the data will be deleted. 
+After clicking 'Submit' and then 'Show Frequent Words' the user will see all the word frequiences along with the author and date. The data has an id showing how many times it's been inputted into the database. If the user goes to the 'DestoyAll' page, all the data will be deleted. 
 
 <img width="202" alt="screen shot 2017-03-31 at 8 40 34 pm" src="https://cloud.githubusercontent.com/assets/21225598/24573597/5cfb373c-1653-11e7-9c65-49dcb969c1f6.png">
-
-
-<img width="202" alt="screen shot 2017-03-31 at 8 40 34 pm" src="https://cloud.githubusercontent.com/assets/21225598/24573597/5cfb373c-1653-11e7-9c65-49dcb969c1f6.png">
-
