@@ -73,9 +73,9 @@ After clicking 'Submit' and then 'Show Frequent Words' the user will see all the
 
 ##Troubleshooting
 
-I was having issues inputting text from the internet. In order for the database to generate the word count it has to be a clean text file or else it will display nothing. Another option for the database to work is if the user types the speech but that is very time consuming. 
+I was having issues inputting text from the internet. In order for the database to work, is if the user inputs a clean text file or else it will display nothing. Another option for the database, is if the user types the speech but that is very time consuming. 
 
-I also couldn't generate a chart because I can't control what the user will input. Chart.js only displays the data that is given not randomly. Is there a solution for this?
+I also couldn't generate a chart because I can't control what the user will input. Chart.js only displays the data that is given, not randomly. Is there a solution for this?
 
 #Next Steps
 
