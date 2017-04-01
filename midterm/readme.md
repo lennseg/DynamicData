@@ -1,6 +1,6 @@
 #Midterm: Word Frequency in Historical Speeches
 
-The goal for this assignment was to visualize the frequency of words in speeches. I didn't want to get too political and have just Presidential speeches. I thought about focusing on speeches that were memorable to our society.
+The goal for this assignment was to view the frequency of words in speeches. I didn't want to get too political and have just Presidential speeches. I thought about focusing on speeches that were memorable to our society.
 
 Speeches I focused on:
 * Martin Luther King's "I Have a Dream" speech
@@ -12,11 +12,22 @@ Speeches I focused on:
 
 #Process
 
-I began my process by first cleaning the text files for all the speeches. I cleaned up extra spaces and took out the quotations for the javascript code.
+I began my process by first cleaning the text files for all the speeches (I took out the extra spaces and quotations). Afterwards, I created the script testing the word count for each speech. 
 
-![cleaning-up-text](https://cloud.githubusercontent.com/assets/21225598/24537507/8e21abc8-15b0-11e7-827f-69d79ba3fc5b.jpg)
+I started by creating a variable of the speech. Then created another variable to take out all the spaces, punctuations, etc and just focused solely on the letters. All the letters were then converted to lowercase to avoid repetition. Then I worked on ignoring certain words that were not important; I wanted to focus just on the key words. The only way the words were ignored was by putting all the words into a string instead of an array. To this day, I have no idea why it just works that way.
 
-Afterwards, I created the word count in javascript testing the MLK speech.
+Words that are ignored in the script:
+
+* and, you, i, am, its, it, the, to, of, a, on, can, with, for, this, that, in, be, as, has, if, from, but, so, also, there, their, are, than, do, here, must, make, about, by, have, not, who, know, how, those, these, when, they, why, your, must, because, day, one, was, just, will
+
+Then the words are split by a space. Now it's time for the word count.
+
+The Algorithm:
+
+Look at each word, is it a a new word? If it is, add it and set the count to 1. 
+If it's not a new word increase it's exisistence by 1. 
+
+I ended the script by counting words that were frequent 10 or more times (this is what the user will see). 
 
 ![speech-js-test-code-01](https://cloud.githubusercontent.com/assets/21225598/24537488/67ab965c-15b0-11e7-9aeb-4cde14edf97c.jpg)
 ![speech-js-test-code-02](https://cloud.githubusercontent.com/assets/21225598/24537532/c23b0fe4-15b0-11e7-9862-7031830ef567.jpg)
