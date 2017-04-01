@@ -70,3 +70,13 @@ The user can replace the sample content with theirs. If they wanted to see how t
 After clicking 'Submit' and then 'Show Frequent Words' the user will see all the word frequiences along with the author and date. The data has an id showing how many times it's been inputted into the database. If the user goes to the 'DestoyAll' page, all the data will be deleted. 
 
 <img width="202" alt="screen shot 2017-03-31 at 8 40 34 pm" src="https://cloud.githubusercontent.com/assets/21225598/24573597/5cfb373c-1653-11e7-9c65-49dcb969c1f6.png">
+
+##Troubleshooting
+
+I was having issues inputting text from the internet. In order for the database to generate the word count it has to be a clean text file or else it will display nothing. Another option for the database to work is if the user types the speech but that is very time consuming. 
+
+I also couldn't generate a chart because I can't control what the user will input. Chart.js only displays the data that is given not randomly. Is there a solution for this?
+
+#Next Steps
+
+I would like to visualize the word frequency with chart.js.
