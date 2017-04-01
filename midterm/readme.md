@@ -34,11 +34,13 @@ I ended the script by counting words that were frequent 10 or more times (this i
 
 ##Creating the Server
 
-I followed the examples we worked on in class to created my server and database. For the database I created three columns, the name of the speech, the author and the date.
+I followed the examples we worked on in class to created my server and database. For the database, I created three columns the name of the speech, the author and the date.
 
 ![creating-server-01](https://cloud.githubusercontent.com/assets/21225598/24573305/a7344ea0-164f-11e7-9872-7394fb01990a.jpg)
 ![creating-server-02](https://cloud.githubusercontent.com/assets/21225598/24573320/d11b0f9c-164f-11e7-8aa5-02d640c001f4.jpg)
 ![creating-database-02](https://cloud.githubusercontent.com/assets/21225598/24573349/1a180736-1650-11e7-9ba5-22a079ccdf4d.jpg)
 
 ##Creating the Database
+
+![creating-database-01](https://cloud.githubusercontent.com/assets/21225598/24573381/69c3b208-1650-11e7-9a22-57105d4fcfac.jpg)
 
