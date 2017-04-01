@@ -79,4 +79,4 @@ I also couldn't generate a chart because I can't control what the user will inpu
 
 #Next Steps
 
-I would like to visualize the word frequency with chart.js.
+I would like to visualize the word frequency with a bar chart.
