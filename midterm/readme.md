@@ -44,3 +44,7 @@ I followed the examples we worked on in class to created my server and database.
 
 ![creating-database-01](https://cloud.githubusercontent.com/assets/21225598/24573381/69c3b208-1650-11e7-9a22-57105d4fcfac.jpg)
 
+#Inputing the Data
+
+![inputing-data-01](https://cloud.githubusercontent.com/assets/21225598/24573395/9cdb961a-1650-11e7-8fbf-93fa1a985a16.jpg)
+
