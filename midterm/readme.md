@@ -38,7 +38,7 @@ I followed the examples we worked on in class to created my server and database.
 
 ![creating-server-01](https://cloud.githubusercontent.com/assets/21225598/24573305/a7344ea0-164f-11e7-9872-7394fb01990a.jpg)
 ![creating-server-02](https://cloud.githubusercontent.com/assets/21225598/24573320/d11b0f9c-164f-11e7-8aa5-02d640c001f4.jpg)
-![creating-database-02](https://cloud.githubusercontent.com/assets/21225598/24573349/1a180736-1650-11e7-9ba5-22a079ccdf4d.jpg)
+![1a180736-1650-11e7-9ba5-22a079ccdf4d](https://cloud.githubusercontent.com/assets/21225598/24668761/0318a1ec-1936-11e7-83d7-d7a4f022ee95.jpg)
 
 ##Creating the Database
 
