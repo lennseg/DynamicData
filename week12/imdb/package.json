@@ -1,0 +1,24 @@
+{
+  "name": "imdb",
+  "version": "1.0.0",
+  "description": "imdb api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lennse garcia",
+  "license": "ISC",
+  "dependencies": {
+    "blipp": "^2.3.0",
+    "fetch": "^1.1.0",
+    "form-data": "^2.1.4",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.0.6",
+    "hapi": "^16.1.1",
+    "imdb-api": "^2.2.2",
+    "inert": "^4.2.0",
+    "path": "^0.12.7",
+    "sequelize": "^3.30.4",
+    "vision": "^4.1.1"
+  }
+}
