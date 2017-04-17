@@ -116,8 +116,6 @@ server.route({
     , path: '/displayAll'
     , handler: function (request, reply) {
         Speech.findAll().then(function (users) {
-            // projects will be an array of all User instances
-            //console.log(users[0].monsterName);
             var allUsers = JSON.stringify(users);
             reply.view('dbresponse', {
                 dbresponse: allUsers
