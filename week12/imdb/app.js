@@ -8,6 +8,7 @@ const Inert = require('inert');
 const Path = require('path');
 const Sequelize = require('sequelize');
 const Fetch = require("node-fetch");
+const FormData = require("form-data");
 const server = new Hapi.Server({
     connections: {
         routes: {
@@ -31,6 +32,19 @@ var sequelize = new Sequelize('db', 'username', 'password', {
     }, // SQLite only
     storage: 'db.sqlite'
 });
+
+//Create the data store for the API
+var Nominee = [
+    {
+        "actorName": 'Meryl Streep',
+        "movie": 'Mama Mia'
+    },
+    {
+        "actorName": 'Leonardo DiCaprio',
+        "movie": 'Titanic'
+    }
+]
+    
 server.route([
     {
         method: 'GET',
@@ -38,11 +52,48 @@ server.route([
         handler: function(request, reply) {
             reply("Hello World");
         }
+        },
+    {
+        method: 'GET',
+        path: '/api/v1/Nominee',
+        handler: function(request, reply) {
+            reply(Nominee);
+        }
+        },
+    {
+        method: 'POST',
+        path: '/api/v1/Nominee',
+        handler: function(request, reply) {
+            newNominee = {"actorName":request.payload.actorName, "movie":request.payload.movie};
+            Nominee.push(newNominee);
+            reply(Nominee).code(201);
+        }
+        },
+    {
+        method: 'GET',
+        path: '/api/v1/Nominee/{index}',
+        handler: function(request, reply) {
+            reply(Nominee[request.params.index-1]);
+        }
+        },
+    {
+        method: 'PUT',
+        path: '/api/v1/Nominee/{index}',
+        handler: function(request, reply) {
+           newNominee = {"actorName":request.payload.actorName, "movie":request.payload.movie};
+           Nominee[request.params.index-1] = newNominee;
+           reply(Nominee[request.params.index-1]);
+        }
+        },
+    {
+        method: 'DELETE',
+        path: '/api/v1/Nominee/{index}',
+        handler: function(request, reply) {
+            delete Nominee[request.params.index-1];
+            reply().code(204);
+        }
         }
 ])
 server.start((err) => {
-    if (err) {
-        throw err;
-    }
     console.log(`Server running at: ${server.info.uri}`);
 });
