@@ -37,7 +37,7 @@ var sequelize = new Sequelize('db', 'username', 'password', {
 var Nominee = [
     {
         "actorName": 'Meryl Streep',
-        "movie": 'Mama Mia'
+        "movie": 'Mamma Mia'
     },
     {
         "actorName": 'Leonardo DiCaprio',
