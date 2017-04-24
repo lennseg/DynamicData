@@ -1,4 +1,5 @@
 #Midterm: Word Frequency in Historical Speeches
+------------------------------------------------------------
 
 The goal for this assignment was to view the frequency of words in speeches. I didn't want to get too political and have just Presidential speeches. I thought about focusing on speeches that were memorable to our society.
 
