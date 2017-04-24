@@ -23,7 +23,7 @@ const server = new Hapi.Server({
 });
 
 server.connection({
-    port: 3000
+    port: 3001
 });
 
 var sequelize = new Sequelize('db', 'username', 'password', {
@@ -176,7 +176,7 @@ server.route({
     path: '/createDB',
     handler: function (request, reply) {
         // force: true will drop the table if it already exists
-        Monster.sync({
+        Mojito.sync({
             force: true
         })
         reply("Database Created")
@@ -198,7 +198,7 @@ server.route({
     method: 'GET',
     path: '/addDB/{mojitoName}/{rum}/{fruit}/{limes}',
     handler: function(request, reply){
-        Monster.create({
+        Mojito.create({
             mojitoName: encodeURIComponent(request.params.mojitoName),
             rum: encodeURIComponent(request.params.rum),
             fruit: encodeURIComponent(request.params.fruit),
@@ -216,7 +216,7 @@ server.route({
     path: '/displayAll',
     handler: function (request, reply) {
 
-        Monster.findAll().then(function(users){
+        Mojito.findAll().then(function(users){
 
             //console.log(users[0].mojitoName);
 
