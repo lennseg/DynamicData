@@ -43,24 +43,24 @@ server.route({
         view: {
             template: 'index',
             context:{
-                title: 'Rey robs a bank',
-                message: 'Choose options for Reys adventure',
+                title: 'Rey Robs a Bank',
+                message: 'Choose options for Reys Adventure',
                 nav: [
                     {
                         url: "/page2/bank",
                         title: "Pick a bank"
                     },
                     {
-                        url: "/page2/kite",
-                        title: "kite"
+                        url: "/page3/weapon",
+                        title: "Pick a weapon"
                     },
                     {
-                        url: "/page2/computer",
-                        title: "computer"
+                        url: "/page3/money",
+                        title: "Pick the amount"
                     },
 
                 ],
-                menu: [{item: "hello"},{item: "hello"},{item: "hello"}]
+                menu: [{item: "bank"},{item: "weapon"},{item: "money"}]
             }
         }
     }
