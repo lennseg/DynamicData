@@ -78,6 +78,12 @@ I was having issues inputting text from the internet. In order for the database 
 
 I also couldn't generate a chart because I can't control what the user will input. Chart.js only displays the data that is given, not randomly. Is there a solution for this?
 
+#Heroku Upload
+
+I followed the instructions given from the Heroku website. I was having issues with Git on my terminal. This a screenshot of what is displayed on Heroku. I'm not quite sure what I'm missing or what I did wrong.
+
+<img width="800" alt="screen shot 2017-05-09 at 12 49 30 pm" src="https://cloud.githubusercontent.com/assets/21225598/25881496/4a3d3646-350b-11e7-80f2-e2e222513fd0.png">
+
 #Next Steps
 
 I would like to visualize the word frequency with a bar chart.
