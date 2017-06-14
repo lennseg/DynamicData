@@ -1,7 +1,7 @@
 #Midterm: Word Frequency in Historical Speeches
 ------------------------------------------------------------
 
-The goal for this assignment was to view the frequency of words in speeches. I didn't want to get too political and have just Presidential speeches. I thought about focusing on speeches that were memorable to our society.
+The goal for this assignment was to view the frequency of words in speeches. Any speech will work with this application, I chose three speeches from two Presidents and Martin Luther King Jr.
 
 Speeches I focused on:
 * Martin Luther King's "I Have a Dream" speech
