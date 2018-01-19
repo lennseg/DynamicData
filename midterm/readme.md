@@ -25,7 +25,7 @@ Then the words are split by a space. Now it's time for the word count.
 
 The Algorithm:
 
-Look at each word, is it a a new word? If it is, add it and set the count to 1. 
+Look at each word, is it a new word? If it is, add it and set the count to 1. 
 If it's not a new word increase it's exisistence by 1. 
 
 I ended the script by counting words that were frequent 10 or more times (this is what the user will see). 
@@ -45,7 +45,7 @@ I followed the examples we worked on in class to created my server and database.
 
 ![creating-database-01](https://cloud.githubusercontent.com/assets/21225598/24573381/69c3b208-1650-11e7-9a22-57105d4fcfac.jpg)
 
-#Inputing the Data
+#Inputting the Data
 
 I inputted the javascript into the dbresponse page. I also replaced the MLK speech with the variables from the columns (speech, author and date).
 
