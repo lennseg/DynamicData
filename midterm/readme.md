@@ -84,6 +84,4 @@ I was also having issues with git-whenever I made changes to my app I got an err
 
 <img width="612" alt="screen shot 2017-05-09 at 11 16 27 pm" src="https://cloud.githubusercontent.com/assets/21225598/25881943/da568b54-350d-11e7-9b40-6529b7968154.png">
 
-This is what shows up on the Heorku site:
-
 <img width="800" alt="screen shot 2017-05-09 at 12 49 30 pm" src="https://cloud.githubusercontent.com/assets/21225598/25881496/4a3d3646-350b-11e7-80f2-e2e222513fd0.png">
